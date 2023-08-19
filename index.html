@@ -1,36 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="img/icon.png"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/icon.png" />
 
-  <!-- Install Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-  
-  <title>Average Calculator</title>
-</head>
-<body class="m-3">
-  <h1 class="display-3">Average Calculator</h1>
-  <p class="text-secondary fs-4 pb-2">Get an average of a list of numbers!</p>
+    <!-- Install Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
 
-  <span class="text-secondary">Seperate the numbers using either commas, spaces, or both.</span>
+    <title>Average Calculator</title>
+  </head>
+  <body class="m-3">
+    <h1 class="display-3">Average Calculator</h1>
+    <p class="text-secondary fs-4 pb-2">Get an average of a list of numbers!</p>
 
-  <span class="test">hello world</span>
+    <span class="text-secondary">Seperate the numbers using a new line.</span>
 
-  <div class="input-group mb-3 mt-2">
-    <span class="input-group-text">Enter your list of numbers:</span>
-    <textarea class="numbers form-control"></textarea>
-  </div>
+    <div class="input-group mb-3 mt-2">
+      <span class="input-group-text">Enter your list of numbers:</span>
+      <textarea class="numbers form-control"></textarea>
+    </div>
 
-  <button type="button" class="btn btn-primary mb-3 calculate">Calculate</button>
+    <button type="button" class="btn btn-primary mb-3 calculate">Calculate</button>
 
-  <hr class="p-2" />
+    <br />
 
-  <div class="input-group">
-    <span class="input-group-text" id="basic-addon1">Average number:</span>
-    <input type="text" class="result form-control" readonly disabled>
-  </div>
-</body>
+    <span class="text-danger error"></span>
+
+    <hr class="p-2" />
+
+    <div class="input-group">
+      <span class="input-group-text" id="basic-addon1">Average number:</span>
+      <input type="text" class="result form-control" readonly disabled />
+    </div>
+
+    <script src="index.js"></script>
+  </body>
 </html>
